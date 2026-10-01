@@ -1,0 +1,21 @@
+{
+  "name": "nsga-hv-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local non-dominated sorting and exact 2D/3D hypervolume backend (API + CLI)",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "mohv": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/server.ts",
+    "cli": "tsx src/cli/index.ts",
+    "demo": "tsx scripts/demo.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}
