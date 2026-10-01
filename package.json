@@ -1,0 +1,32 @@
+{
+  "name": "mo-ns-hv-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-objective non-dominated sorting and hypervolume comparison backend (API + CLI, no web UI)",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/api/server.js",
+    "dev": "tsx src/api/server.ts",
+    "cli": "tsx src/cli/index.ts",
+    "demo": "tsx scripts/demo.ts",
+    "demo:built": "node dist/scripts/demo.js",
+    "cli:built": "node dist/src/cli/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  }
+}

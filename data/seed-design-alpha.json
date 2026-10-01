@@ -1,0 +1,16 @@
+{
+  "batchId": "design-alpha",
+  "idempotencyKey": "seed-design-alpha-v1",
+  "objectives": [
+    { "name": "unit_cost", "direction": "min", "unit": "USD" },
+    { "name": "efficiency", "direction": "max", "unit": "percent" }
+  ],
+  "referencePoint": [120, 0],
+  "candidates": [
+    { "candidateId": "A-01", "values": [40, 70], "feasible": true },
+    { "candidateId": "A-02", "values": [60, 85], "feasible": true },
+    { "candidateId": "A-03", "values": [90, 95], "feasible": true },
+    { "candidateId": "A-04", "values": [70, 72], "feasible": true },
+    { "candidateId": "A-05", "values": [30, 120], "feasible": false }
+  ]
+}
